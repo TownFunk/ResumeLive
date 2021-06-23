@@ -35,7 +35,8 @@ body {
 .header {
     padding: 40px;
     text-align: center;
-    background: #3c94bf;
+    background: rgb(12,35,45);
+	background: linear-gradient(0deg, rgba(12,35,45,1) 0%, rgba(60,148,191,1) 20%, rgba(0,212,255,1) 100%);
     color: white;
 }
 
@@ -101,6 +102,14 @@ display: block;
     text-align: center;
     background: #ddd;
 }
+/* Center Image */
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+}
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
@@ -113,11 +122,15 @@ display: block;
 			<body>
 	<a name="top"></a>
 				<!-- Header -->
-				<div class="header">
-					<h1>Townsend Wilkinson</h1>
-					<p>
-						<em>Associate's in Digital Multimedia Design - UNOH; 2010</em>
-					</p>
+				<div>
+					<!-- <span class="center" style="margin: auto;"><img src="Townsend_Gif.gif" width="100%"></span> -->
+					<span class="center" style="margin: auto;">
+						<video width="100%" height="auto" autoplay muted>
+						  <source src="Townsend_MP4.mp4" type="video/mp4">
+						  <source src="movie.ogg" type="video/ogg">
+						Your browser does not support the video tag.
+						</video>
+					</span>
 				</div>
 				<!-- Navigation Bar -->
 				<div class="navbar">
