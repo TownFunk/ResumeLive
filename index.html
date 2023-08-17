@@ -21,29 +21,38 @@ transition-property: background-color;
 transition-duration: .5s;
 	}
 
-a.links:hover { Background-color: lightgrey; border-color: #3c94bf; }
+a.links:hover { Background-color: #0c232d; border-color: #3c94bf; }
 
 
 /* Style the body */
 body {
-	max-width: 75%;
     font-family: Arial;
-    margin: auto;
+    margin: 0;
 }
 
 /* Header/logo Title */
+
+@keyframes mymove {
+  from {left: -600px;}
+  to {left: 0px;}
+}
+
 .header {
     padding: 40px;
     text-align: center;
-    background: rgb(12,35,45);
-	background: linear-gradient(0deg, rgba(12,35,45,1) 0%, rgba(60,148,191,1) 20%, rgba(0,212,255,1) 100%);
     color: white;
+    animation-timing-function: ease;
+    position: relative;
+  	animation: mymove 4s;
 }
 
 /* Style the top navigation bar */
 .navbar {
     display: flex;
     background-color: #0c232d;
+    animation-timing-function: ease;
+    position: relative;
+  	animation: mymove 5s;
 }
 
 /* Style the navigation bar links */
@@ -58,8 +67,7 @@ body {
 
 /* Change color on hover */
 .navbar a:hover {
-    background-color: #f1f1f1;
-    color: black;
+    color: #3c94bf;
 }
 
 /* Column container */
@@ -85,8 +93,8 @@ body {
 
 /*container containers*/
 .container {
-display: block;
-    background-color: #aaa;
+	display: block;
+    background-color: #3c94bf;
     width: auto;
 	padding: 20px;
 	overflow: hidden;
@@ -100,15 +108,7 @@ display: block;
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
-}
-/* Center Image */
-  .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 100%;
+    background: #0c232d;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -122,64 +122,37 @@ display: block;
 			<body>
 	<a name="top"></a>
 				<!-- Header -->
-				<div>
-					<!-- <span class="center" style="margin: auto;"><img src="Townsend_Gif.gif" width="100%"></span> 
-					<span class="center" style="margin: auto;">
-						<video width="100%" height="auto" autoplay muted>
-						  <source src="Townsend_MP4.mp4" type="video/mp4">
-						  <source src="movie.ogg" type="video/ogg">
-						Your browser does not support the video tag.
-						</video>
-					</span>
-				</div>
-				-->
-
-				<!-- Header 2 -->
+				<div style="background: #3c94bf;">
 				<div class="header">
 					<h1>Townsend Wilkinson</h1>
 					<p>
-						<em>Associate's in Digital Multimedia Design - UNOH; 2010</em>
+						<em>Associate's Degree in Digital Multimedia Design - UNOH; 2010</em>
 					</p>
 				</div>
+			</div>
 				<!-- Navigation Bar -->
+			<div style="background-color: #0c232d;">
 				<div class="navbar">
-					<a href="https://www.linkedin.com/in/townsend-wilkinson-85798529/" target="_blank"><b>L</b>inkedIn</a>
-					<a href="https://townsendwilkinson.myportfolio.com/" target="_blank"><b>P</b>hotography <b>W</b>ebsite</a>
+					<a href="https://www.linkedin.com/in/townsend-wilkinson-85798529/"><b>L</b>inkedIn</a>
+					<a href="https://townsendwilkinson.myportfolio.com/"><b>P</b>hotography <b>W</b>ebsite</a>
+					<a href="https://www.flickr.com/photos/125858557@N08"><b>F</b>lickr</a>
 				</div>
+			</div>
 				<!-- Begin Main Content -->
-				<div class="row" style="border: 8px solid #0c232d;">
+				<div class="row">
 					<div class="side">
-						<h1>Who I am:</h1> <br>
+						<h1>Overview</h1> <br>
 						<div class="container" id="over" style="height:auto; width:auto;">
 							<center>
-								<img style="width: 80%; "  src="Townsend.jpg"/>
+								<img style="max-width: 100%; "  src="townsend.jpg"/>
 							</center>
 						</div>
-						<p>Dedicated professional with demonstrated strengths in customer service, time management, and web design. Consulted for customers in C-Level positions across a myriad of industries to build solutions and improve workflows. Excellent verbal and written communicator with strong background cultivating positive relationships and exceeding expectations. Always happy to lift others up to help them succeed and grow.</p>
+						<p>I am a dedicated professional with demonstrated strengths in customer service, time management, and web design. Consulted for customers in C-Level positions across a myriad of industries to build web apps and improve workflows. Excellent verbal and written communicator with strong background cultivating positive relationships and team skills. I'm always happy to lift others up to help them succeed and grow. </p>
 						
 						<h3>Skills</h3>
-						<div class="container" style="height:auto; vertical-align: top;"> 
+						<div class="container" style="height:auto; text-align: top;"> 
 							<br> <center>
 							<table style="width: 100%;"> <tbody> 
-								<tr> 
-								<td style="text-align: top;" colspan="2">
-									<b>Soft-Skills</b>
-								</td>
-							</tr>
-
-							<tr> 
-							<td style="vertical-align: top;" colspan="2">
-									<ul>
-										<li>Workflow &amp; Time Management</li>
-										<li>Public Speaking &amp; In-class Training</li>
-										<li>Written &amp; Verbal Communications</li>										
-										<li>Working in a SaaS environment</li>
-										<li>Working remote and functioning independently, full-time</li>
-										<li>Photography &ndash; lighting, posing, retouching</li>
-									</ul>
-								</td>
-								</tr>
-
 								<tr> 
 								<td style="text-align: top;">
 									<b>Applications</b>
@@ -189,57 +162,60 @@ display: block;
 								</td> 
 							</tr>
 							<tr> 
-							<td style="vertical-align: top;">
+							<td style="vertical-align-align: top;">
 									•	MS Office<br>
 									•	iCIMS<br />
 									•	Adobe CC<br>
 									•	Quark Xpress<br>
 									•	Sublime Text<br>
 									•	Sketch App<br>
+									•	Github
 								</td>
-								<td style="vertical-align: top;">
+								<td style="vertical-align-align: top;">
 									• HTML<br>
 									• CSS<br>
 									• SQL<br>
 									• JSON<br>
-									• JavaScript
+									• JavaScript<br />
+									• Bootstrap
 								</td> 
 								</tr> </tbody> </table> </center>
 								
 							</div>
 							
-						<h3>Relevant Work History</h3>
-						<div class="container" style="height:auto;"><strong>iCIMS, Principal Design Support Engineer</strong>
-							<br>
-					<ul>
-                        <li>Design branding on customer&rsquo;s career sites to be compatible with iCIMS Career portals, ensuring functionality on all browsers and devices.</li>
-                        <li>Work with customers to find the best solution for a variety of forms in terms of design, workflow, and coding.</li>
-                        <li>Assist Co-workers in their roles to better manage workflows, and assist in balancing the workload across the team.</li>
-                        <li>Built out in-class and virtual training to be used by new hires and existing employees.</li>
-                        <li>Communicated directly with internal and external stakeholders to scope and plan projects relating to the building and implementation of new forms for the iCIMS system, including Applications, Government forms, and Financial forms.</li>
-                        <li>Innovated and pushed the limits of the internal iCIMS system to better present forms for easier use and better brand representation.</li>
-                        <li>Worked on projects to streamline and simplify the process of internal article searching.</li>
-                    </ul>
-				</div>
-				<br />
-
+						<h3>Work History</h3>
 						<div class="container" style="height:auto;"><strong>iCIMS Technical Support Engineer</strong>
 							<br>
 								<ul>
-                        <li>Assist customers with every aspect of the iCIMS platform</li>
-                        <li>Provide customers with support and consult on best processes and practices for using the iCIMS platform.&nbsp;</span></li>
-                        <li>Troubleshoot basic and advanced issues in the iCIMS platform</li>
-                        <li>Identifying technical issues and process issues within the iCIMS platform.</li>
-                        <li>Assist team mates in their roles through training and being a technical knowledge resource</li>
-                    </ul>
+									<li>Assist Customers with every aspect of the iCIMS platform and Provide a customer experience second to none.</li>
+									<li>Troubleshoot basic and advanced technical and process issues in the iCIMS platform.</li>
+									<li>Create and modify web pages’ HTML, CSS and JavaScript.</li>
+									<li>Advise Best Practices and find solutions to technical limitations.</li>
+									<li>Assist Co-workers in their roles to better assist the customer.</li>
+								</ul>
 							</div>
 							<br>
-							<div class="container" style="height:auto;"><strong>Reynolds & Reynolds Co. - Graphic Designer</strong> <br>
+								<div class="container" style="height: auto;"> <strong>GeekSquad - Advanced Repair Agent </strong> <br>
 									<ul>
-										<li>Meticulously design and Input forms and ads for automotive dealers to their specifications.</li>
-										<li>Work closely with other departments to create a satisfactory product for customers.</li>
-										<li>Processed film of images to be sent to press.</li>
-										<li>Set up files for prepress.</li>
+										<li>Same responsibilities as the “Operations Agent” Position.</li>
+										<li>Advanced PC Diagnostics and Repairs on Hardware and Software.</li>
+										<li>Organize and control the flow of work on the bench.</li>
+									</ul>
+									</div>
+								<br>
+									<div class="container" style="height:auto;"><strong>GeekSquad - Operations Agent</strong> <br>
+									<ul>
+										<li>Handle shipping, receiving and customer contacts.</li>
+										<li>Troubleshoot PC issues, interact with clients, and handle cash transactions.</li>
+										<li>Perform basic repairs on Personal Computers (Hardware + Software).</li>
+									</ul>
+								</div>
+																<br>
+								<div class="container" style="height:auto;"><strong>Reynolds & Reynolds Co. - Graphic Designer</strong> <br>
+									<ul>
+										<li>Handle shipping, receiving and customer contacts.</li>
+										<li>Troubleshoot PC issues, interact with clients, and handle cash transactions.</li>
+										<li>Perform basic repairs on Personal Computers (Hardware + Software).</li>
 									</ul>
 									
 								</div>
@@ -249,12 +225,12 @@ display: block;
 									<h1 style="float: Right; margin: 25px;"> Notable Projects </h1>
 							<!-- 1st Project -->
 									<h2>
-										<a class="links">Evencrown</a>
+										<a class="links" href="https://evencrown.com/">Evencrown</a>
 									</h2>
 									<div class="container" id="over" style="height:auto; width:auto;">
 										<img style="width:100%; height:100%;" src="Evencrown.PNG">
 										</div>
-										<p>Though no longer hosted, designed and constructed the web site for the band Evencrown. This included multiple pages, social media integrations, and server side file management.</p>
+										<p>Assisted in the design and construction of the web site for the band Evencrown. This included multiple pages, social media integrations, and server side file management.</p>
 										<br>
 							<!-- 2nd Project -->
 											<h2>
