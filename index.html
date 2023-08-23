@@ -9,6 +9,12 @@
     box-sizing: border-box;
 	font-family: Trebuchet MS;
 }
+/* TO DO NOTES 
+
+Make single wide column
+Make TW bannner using CSS as header that blends
+
+*/
 
 
 /* link padding */
@@ -21,7 +27,7 @@ transition-property: background-color;
 transition-duration: .5s;
 	}
 
-a.links:hover { Background-color: #0c232d; border-color: #3c94bf; }
+a.links:hover {background-color: #0c232d; border-color: #3c94bf; }
 
 
 /* Style the body */
@@ -79,7 +85,7 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-    flex: 30%;
+    flex: 100%;
     background-color: #f1f1f1;
     padding: 20px;
 }
@@ -118,11 +124,11 @@ body {
     }
 }
 </style>
-			</head>
+		</head>
 			<body>
 	<a name="top"></a>
 				<!-- Header -->
-				<div style="background: #3c94bf;">
+			<div style="background: #3c94bf;">
 				<div class="header">
 					<h1>Townsend Wilkinson</h1>
 					<p>
@@ -141,13 +147,47 @@ body {
 				<!-- Begin Main Content -->
 				<div class="row">
 					<div class="side">
-						<h1>Overview</h1> <br>
 						<div class="container" id="over" style="height:auto; width:auto;">
 							<center>
 								<img style="max-width: 100%; "  src="Townsend Wilkinson.jpg"/>
 							</center>
 						</div>
-						<p>I am a dedicated professional with demonstrated strengths in customer service, time management, and web design. Consulted for customers in C-Level positions across a myriad of industries to build web apps and improve workflows. Excellent verbal and written communicator with strong background cultivating positive relationships and team skills. I'm always happy to lift others up to help them succeed and grow. </p>
+					</div>
+							<span style="padding-left: 10%; padding-right: 10%">
+								<div class="main">
+									<h1 style="float: right; margin: 10px;"> Notable Projects </h1>
+							<!-- 1st Project -->
+									<h2>
+										<a class="links" href="https://www.etsy.com/shop/hildasattic">Hilda's Attic</a>
+									</h2>
+										<div class="container" id="over" style="height:auto; width:auto;">
+										<img style="width:100%; height:100%;" src="Hilda.PNG">
+										</div>
+										<p>Designed branding assets, advertisements, and photographed product for Hilda's Attic, LLC.</p>
+							<!-- 2nd Project -->
+											
+										<h2>
+										<a class="links" href="https://evencrown.com/">Evencrown</a>
+									</h2>
+									<div class="container" id="over" style="height:auto; width:auto;">
+										<img style="width:100%; height:100%;" src="Evencrown.PNG">
+										</div>
+										<p>Assisted in the design and construction of the web site for the band Evencrown. This included multiple pages, social media integrations, and server side file management.</p>
+										<br>
+							<!-- 3rd Project -->
+										<br>
+											<h2>	<a class="links" href="">This Page</a>	</h2>
+										<div class="container" id="over" style="height:auto; width:auto;">
+											<img style="width:100%; height:100%;" src="This Page.PNG">
+										</div>
+											<p>Built this entire resume page from the ground up. Utilized online resources to supplement knowledge gaps and troubleshoot issues.</p>
+										</div>
+										</div>
+								<!-- Main Resume Part -->
+					<div style="padding-left: 10%; padding-right: 10%;">
+						<h1>Overview</h1> 
+
+						I am a dedicated professional with demonstrated strengths in customer service, time management, and web design. Consulted for customers in C-Level positions across a myriad of industries to build web apps and improve workflows. Excellent verbal and written communicator with strong background cultivating positive relationships and team skills. I'm always happy to lift others up to help them succeed and grow.
 						
 						<h3>Skills</h3>
 						<div class="container" style="height:auto; text-align: top;"> 
@@ -182,8 +222,7 @@ body {
 								</tr> </tbody> </table> </center>
 								
 							</div>
-							
-						<h3>Work History</h3>
+							<h3>Work History</h3>
 						<div class="container" style="height:auto;"><strong>iCIMS Technical Support Engineer</strong>
 							<br>
 								<ul>
@@ -219,38 +258,8 @@ body {
 									</ul>
 									
 								</div>
-								<br>
-								</div>
-								<div class="main">
-									<h1 style="float: Right; margin: 25px;"> Notable Projects </h1>
-							<!-- 1st Project -->
-									<h2>
-										<a class="links" href="https://www.etsy.com/shop/hildasattic">Hilda's Attic</a>
-									</h2>
-										<div class="container" id="over" style="height:auto; width:auto;">
-										<img style="width:100%; height:100%;" src="Hilda.PNG">
-										</div>
-										<p>Designed branding assets, advertisements, and photographed product for Hilda's Attic, LLC.</p>
-							<!-- 2nd Project -->
-											
-										<h2>
-										<a class="links" href="https://evencrown.com/">Evencrown</a>
-									</h2>
-									<div class="container" id="over" style="height:auto; width:auto;">
-										<img style="width:100%; height:100%;" src="Evencrown.PNG">
-										</div>
-										<p>Assisted in the design and construction of the web site for the band Evencrown. This included multiple pages, social media integrations, and server side file management.</p>
-										<br>
-							<!-- 3rd Project -->
-										<br>
-											<h2>	<a class="links" href="">This Page</a>	</h2>
-										<div class="container" id="over" style="height:auto; width:auto;">
-											<img style="width:100%; height:100%;" src="This Page.PNG">
-										</div>
-											<p>Built this entire resume page from the ground up. Utilized online resources to supplement knowledge gaps and troubleshoot issues.</p>
-										</div>
-										</div>
-									</div>
+							</div>
+						</span>
 							<!-- Footer -->
 									<div class="footer">
 										<h2><a class="links" href="#top">Back to top of page</a></h2>
