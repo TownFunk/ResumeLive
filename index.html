@@ -117,6 +117,34 @@ body {
     background: #0c232d;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 10px;
+}
+
+.gallery {
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery__img {
+  scroll-snap-align: start;
+  margin-bottom: 10px;
+}
+
+.lil-nav {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
     .row, .navbar {   
@@ -147,7 +175,7 @@ body {
 			</div>
 				<!-- Begin Main Content -->
 				<div class="main" style="width: 100%; padding-left: 16%; padding-right: 16%;">
-						<div class="side">
+					<div class="side">
 							<div class="container" id="side" style="height:auto; width:auto;">
 								<center>
 									<img style="max-width: 30%; "  src="Townsend Wilkinson.jpg"/><br />
@@ -156,9 +184,68 @@ body {
 								</div>
 							</div>
 							<span style="padding-left: 10%; padding-right: 10%;">
-								<h1 style="float: right; margin: 10px; color: #FF8A33;"> Notable Projects </h1>
+								<h1 style="margin: 10px; color: #FF8A33;"> Notable Design and Collaborative Projects </h1>
 							</span>
-							<div class="main" style="width: 100%;"><!-- 1st Project -->
+						
+			<div class="wrapper">
+			  <nav class="lil-nav">
+			    <a href="#image-1">
+			      <img class="lil-nav__img" src="House_Punch.png" alt="House Punch!" />
+			    </a>
+			    <a href="#image-2">
+			      <img class="lil-nav__img" src="Hilda.PNG" alt="Hilda's Attic" />
+			    </a>
+			    <a href="#image-3">
+			      <img class="lil-nav__img" src="Townsend Wilkinson.jpg" alt="Galaxies" />
+			    </a>
+			    <a href="#image-4">
+			      <img class="lil-nav__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/matthew-smith-9CV6WrxxdrM-unsplash.jpg" alt="Motel" />
+			    </a>
+			    <a href="#image-5">
+			      <img class="lil-nav__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/vladimir-kondriianenko-bxwzcFy9YwM-unsplash.jpg" alt="Minimalist nightmare" />
+			    </a>
+			    <a href="#image-6">
+			      <img class="lil-nav__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/jakob-owens-EkxOtUljwhs-unsplash.jpg" alt="Hoops" />
+			    </a>
+			    <a href="#image-7">
+			      <img class="lil-nav__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/tim-bogdanov-4uojMEdcwI8-unsplash.jpg" alt="Gentleman" />
+			    </a>
+			    <a href="#image-8">
+			      <img class="lil-nav__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/weston-mackinnon-caUtk0DTiR0-unsplash.jpg" alt="Stuff" />
+			    </a>
+			  </nav>
+
+			  <div class="gallery">
+			    <img class="gallery__img" id="image-1" />
+			    <h2>
+					<a class="links" href="https://housepunch.bandcamp.com/album/house-punch">House Punch!</a>
+				</h2>
+			    <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3027316355/size=large/bgcol=333333/linkcol=e99708/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://housepunch.bandcamp.com/album/house-punch">House Punch! by House Punch</a></iframe>
+				<br />
+				I began this project in 2020 during the COVID lockdown. I organized, produced, and collaborated with a couple of friends and many other artists I'd never met in person. I was able to bring together people from all over the world to virtually create an album of seven cohesive songs. Give it a listen!<br />
+				<hr />
+			    <h2>
+					<a class="links" href="https://www.etsy.com/shop/hildasattic">Hilda's Attic</a>
+				</h2>
+				<img class="gallery__img" id="image-2" src="Hilda.PNG" alt="Hilda's Attic" />
+			    <p>Designed branding assets, advertisements, and photographed product for Hilda's Attic, LLC.</p>
+			    <hr />
+			    <img class="gallery__img" id="image-3" />
+			    <h2>	<a class="links" href="">This Page</a>	</h2>		
+				<iframe src="https://townfunk.github.io/ResumeLive/" title="This Resume Page" width="100%" height="400px"></iframe>
+				<p>I built this entire resume page from the ground up. Utilized online resources to supplement knowledge gaps and troubleshoot issues.</p>
+				<hr />
+			    <img class="gallery__img" id="image-4" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/matthew-smith-9CV6WrxxdrM-unsplash.jpg" alt="Motel" />
+			    <img class="gallery__img" id="image-5" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/vladimir-kondriianenko-bxwzcFy9YwM-unsplash.jpg" alt="Minimalist nightmare" />
+			    <img class="gallery__img" id="image-6" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/jakob-owens-EkxOtUljwhs-unsplash.jpg" alt="Hoops" />
+			    <img class="gallery__img" id="image-7" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/tim-bogdanov-4uojMEdcwI8-unsplash.jpg" alt="Gentleman" />
+			    <img class="gallery__img" id="image-8" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/weston-mackinnon-caUtk0DTiR0-unsplash.jpg" alt="Stuff" />
+			  </div>
+			</div>
+
+
+						
+						<!--	<div class="main" style="width: 100%;">
 									<h2>
 										<a class="links" href="https://www.etsy.com/shop/hildasattic">Hilda's Attic</a>
 									</h2>
@@ -167,7 +254,6 @@ body {
 									</div>
 										<p>Designed branding assets, advertisements, and photographed product for Hilda's Attic, LLC.</p>
 									</div>
-							<!-- 2nd Project -->
 									<h2>
 										<a class="links" href="https://housepunch.bandcamp.com/album/house-punch">House Punch!</a>
 									</h2>
@@ -176,7 +262,7 @@ body {
 										<br />
 										I began this project in 2020 during the COVID lockdown. I organized, produced, and collaborated with a couple of friends and many other artists I'd never met in person. I was able to bring together people from all over the world to virtually create an album of seven cohesive songs. Give it a listen!
 									</div>
-							<!-- 3rd Project -->
+							
 										<div class="main" style="width: 100%; padding-left: 16%; padding-right: 16%;">
 											<h2>	<a class="links" href="">This Page</a>	</h2>
 										<div class="container" style="height:auto; width:auto;">
@@ -187,6 +273,7 @@ body {
 									</div>
 								</div>
 							</div>
+						-->
 								<!-- Main Resume Part -->
 					<div style="padding-left: 10%; padding-right: 10%;">
 						<h1>Overview</h1> 
